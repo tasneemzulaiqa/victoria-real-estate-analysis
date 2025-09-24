@@ -1,1 +1,11 @@
-Raja-workspace/notebooks/data/
+# Data
+datasets/
+
+# Virtual environment
+proj2_env/
+
+# Editor history
+.history/
+
+.DS_Store
+requirements.txt
