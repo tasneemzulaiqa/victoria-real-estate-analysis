@@ -1,6 +1,8 @@
 # Data
 datasets/
 
+xtra/
+
 # Virtual environment
 proj2_env/
 
@@ -9,3 +11,5 @@ proj2_env/
 
 .DS_Store
 requirements.txt
+Raja-workspace/
+Amanda-workspace/
