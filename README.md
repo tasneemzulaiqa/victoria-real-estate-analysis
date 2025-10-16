@@ -90,3 +90,30 @@ pip install -r requirements.txt
 
 ## Pipeline
 
+Run all the Preprocessisng Notebooks in the order listed below, af
+
+### Preprocessing Notebooks
+
+- `demographics.ipynb` – map suburbs to SA2s  
+- `crime.ipynb` – preprocessing and integration of crime dataset  
+- `Data_preprocessing_domain1.ipynb` – initial property dataset extraction and cleaning  
+- `Data_preprocessing_domain2.ipynb` – feature conversion, imputation, and outlier removal for Domain property dataset
+- `Data_preprocessing_pop.ipynb` – processing population dataset  
+- `Open_street.ipynb` – open street data download and handling  
+- `Openroute.ipynb` – calculating travel distances using Open Route Services API  
+- `calc_dist.ipynb` – distance calculations to schools, CBD, etc from a property in the domain dataset   
+- `income_cleaning.ipynb` – cleaning, merging and structuring raw income dataset  
+- `number_of_foi.ipynb` – calculating number of FOI (points of interest) within a certain distance to a property
+- `future_erp_income_interpolate.ipynb` – interpolating future ERP and income data  
+- `crime_handling.ipynb` – processing and standardizing crime-related data  
+- `data_handling.ipynb` – merging and managing final datasets for model input for Historical Datasets
+
+### Modeling and Analysis Notebooks
+
+- `property_rent_model.ipynb` – models for top 10 features (e.g., Random Forest, XGBoost)  
+- `data_analysis_pop.ipynb` – correlation between rent and population  
+- `geospatial_analysis.ipynb` – spatial FOI point visualizations and suburb-level mapping  
+- `process_time_series.ipynb` – time series forecasting of rental growth (SARIMAX)  
+- `final_model.ipynb` – time series forecasting of rental growth (ARIMA/UCM)  
+- `affordability.ipynb` – affordability map and ranking  
+- `livability.ipynb` – liveability map and ranking
