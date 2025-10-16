@@ -129,15 +129,15 @@ Run all the Preprocessisng Notebooks in the order listed below, once the noteboo
 
 ## Answers to Key Research Questions
 
-### 1. **What are the Most Important Internal and External Factors?**
+### 1\. **What are the Most Important Internal and External Factors?**
 The results for this question can be found in:  
 `Property_Rent_Model.ipynb`
 
-### 2. **What are the Top 10 Suburbs with the Highest Predicted Growth Rate?**
+### 2\. **What are the Top 10 Suburbs with the Highest Predicted Growth Rate?**
 The results for this question can be found in:  
 `process_time_series.ipynb`
 
-### 3. **Where are the Most Liveable and Affordable Suburbs?**
+### 3\. **Where are the Most Liveable and Affordable Suburbs?**
 The results for this question can be found in:  
 `afford.ipynb` and `livability.ipynb`
 
