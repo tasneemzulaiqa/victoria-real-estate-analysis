@@ -2,10 +2,10 @@
 
 ***Team members***
 
-Ee Wan Rong Amanda (1514578)
-Ariq Asri (1450762)
-Tasneem Zulaiqa (1393971)
-Raja Abdul (1364850)
+- Ee Wan Rong Amanda (1514578)  
+- Ariq Asri (1450762)  
+- Tasneem Zulaiqa (1393971)  
+- Raja Abdul (1364850)
 
 ***Research Goal***
 
@@ -24,7 +24,13 @@ Python 3 dependencies:
 - **Matplotlib (pyplot)**
 - **Scikit-learn**
 - **Statsmodels**
-**more....**
+- **GeoPandas** 
+- **Fiona** 
+- **Shapely** 
+- **Folium** 
+- **RapidFuzz**
+- **JSON**
+- **Re (Regex)** 
 
 A requirement.txt including all of the libraries used has been provided. Set up the environment by running:
 ```bash
