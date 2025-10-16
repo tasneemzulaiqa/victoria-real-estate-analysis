@@ -55,7 +55,6 @@ pip install -r requirements.txt
 [Download from ABS](https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files)
 
 ---
-
 ### Income Data
 **Personal Income by Geography (2016–2021)**  
 **Format:** `.xlsx`  
