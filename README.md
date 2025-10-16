@@ -60,13 +60,13 @@ pip install -r requirements.txt
 
 ### SA2 to LGA Mapping
 **VicMap Property Dataset – for mapping SA2 to LGA**  
-[Download from DataVic](https://discover.data.vic.gov.au/dataset/vicmap-property)
+[Download from Data.gov.au](https://data.gov.au/data/dataset/2c79581f-600e-4560-80a8-98adb1922dfc/resource/33d822ba-138e-47ae-a15f-460279c3acc3)
 
 ---
 
 ### Facilities of Interest (FOI)
 **Points of Interest Dataset**  
-[Download from Data.gov.au](https://data.gov.au/data/dataset/2c79581f-600e-4560-80a8-98adb1922dfc/resource/33d822ba-138e-47ae-a15f-460279c3acc3)
+[Download from DataVic](https://discover.data.vic.gov.au/dataset/vicmap-property)
 
 ---
 
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ## Pipeline
 
-Run all the Preprocessisng Notebooks in the order listed below, af
+Run all the Preprocessisng Notebooks in the order listed below, once the notebooks has been run. Proceed running the Modeling and Analysis Notebooks which will give the final answers to our questions
 
 ### Preprocessing Notebooks
 
@@ -108,12 +108,29 @@ Run all the Preprocessisng Notebooks in the order listed below, af
 - `crime_handling.ipynb` – processing and standardizing crime-related data  
 - `data_handling.ipynb` – merging and managing final datasets for model input for Historical Datasets
 
-### Modeling and Analysis Notebooks
+### Analysis Notebooks
 
-- `property_rent_model.ipynb` – models for top 10 features (e.g., Random Forest, XGBoost)  
 - `data_analysis_pop.ipynb` – correlation between rent and population  
 - `geospatial_analysis.ipynb` – spatial FOI point visualizations and suburb-level mapping  
+
+### Modeling Notebooks
+
+- `property_rent_model.ipynb` – models for top 10 features (e.g., Random Forest, XGBoost)  
 - `process_time_series.ipynb` – time series forecasting of rental growth (SARIMAX)  
 - `final_model.ipynb` – time series forecasting of rental growth (ARIMA/UCM)  
 - `affordability.ipynb` – affordability map and ranking  
 - `livability.ipynb` – liveability map and ranking
+
+## Answers to Key Research Questions
+
+### 1. **What are the Most Important Internal and External Factors?**
+The results for this question can be found in:  
+`Property_Rent_Model.ipynb`
+
+### 2. **What are the Top 10 Suburbs with the Highest Predicted Growth Rate?**
+The results for this question can be found in:  
+`process_time_series.ipynb`
+
+### 3. **Where are the Most Liveable and Affordable Suburbs?**
+The results for this question can be found in:  
+`afford.ipynb` and `livability.ipynb`
