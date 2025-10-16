@@ -140,3 +140,5 @@ The results for this question can be found in:
 ### 3. **Where are the Most Liveable and Affordable Suburbs?**
 The results for this question can be found in:  
 `afford.ipynb` and `livability.ipynb`
+
+To obtain a conclusive summary and analysis of our research methodology and findings, run the notebook `Summary_Notebook.ipynb`. 
