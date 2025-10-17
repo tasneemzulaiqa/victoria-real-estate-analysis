@@ -95,49 +95,49 @@ pip install -r requirements.txt
 
 ## Pipeline
 
-Run all the Preprocessisng Notebooks in the order listed below, once the notebooks has been run. Proceed running the Modeling and Analysis Notebooks which will give the final answers to our questions
+Run all the Preprocessing Notebooks in the order listed below, once the notebooks has been run. Proceed running the Integration, Analysis and Modeling Notebooks which will give the final answers to our questions.
 
-### Preprocessing Notebooks
+### Data Preprocessing Notebooks
 
-- `demographics.ipynb` – map suburbs to SA2s  
-- `crime.ipynb` – preprocessing and integration of crime dataset  
-- `Data_preprocessing_domain1.ipynb` – initial property dataset extraction and cleaning  
-- `Data_preprocessing_domain2.ipynb` – feature conversion, imputation, and outlier removal for Domain property dataset
-- `Data_preprocessing_pop.ipynb` – processing population dataset  
-- `Open_street.ipynb` – open street data download and handling  
-- `Openroute.ipynb` – calculating travel distances using Open Route Services API  
-- `calc_dist.ipynb` – distance calculations to schools, CBD, etc from a property in the domain dataset   
-- `income_cleaning.ipynb` – cleaning, merging and structuring raw income dataset  
-- `number_of_foi.ipynb` – calculating number of FOI (points of interest) within a certain distance to a property
-- `future_erp_income_interpolate.ipynb` – interpolating future ERP and income data  
-- `crime_handling.ipynb` – processing and standardizing crime-related data  
-- `data_handling.ipynb` – merging and managing final datasets for model input for Historical Datasets
+- `01_population_preprocessing.ipynb` – Processing population dataset  
+- `02_income_preprocessing.ipynb` – Cleaning, merging and structuring raw income dataset  
+- `03_lga_sa2_mapping.ipynb` – Map suburbs to SA2s  
+- `04_amenities_preprocessing.ipynb` – Clean and categorize Features of Interest (FOI) points
+- `05_crime_preprocessing.ipynb` – Processing and standardizing crime-related data  
+- `06_domain_preprocessing.ipynb` – Property dataset extraction and cleaning  
+- `07_median_data_prepocessing.ipynb` – Clean and merge rental property spreadsheets
+- `08_school_healthcare_cbd.ipynb` – Distance calculations to schools, CBD, etc from a property in the domain dataset   
+- `09_supermarket_train_cbd.ipynb` – Compute proximity of properties to key amenities and Melbourne CBD
 
-### Analysis Notebooks
+### Data Integration Notebooks
+- `domain_data_integration.ipynb` – Merge and enrich the Domain property dataset
+- `historical_data_integration.ipynb` - Merging and managing final datasets for model input for Historical dataset
 
-- `data_analysis_pop.ipynb` – correlation between rent and population  
-- `geospatial_analysis.ipynb` – spatial FOI point visualizations and suburb-level mapping  
+### Data Analysis Notebooks
+
+- `affordability.ipynb` – Affordability map and ranking  
+- `foi_points.ipynb` – Visualize spatial distribution of Features of Interest
+- `livability.ipynb` – Liveability map and ranking
+- `vic_rent_trends.ipynb` – Analyse historical trends in median weekly rents in Victoria (VIC) from 2020 onward
 
 ### Modeling Notebooks
 
-- `property_rent_model.ipynb` – models for top 10 features (e.g., Random Forest, XGBoost)  
-- `process_time_series.ipynb` – time series forecasting of rental growth (SARIMAX)  
-- `final_model.ipynb` – time series forecasting of rental growth (ARIMA/UCM)  
-- `affordability.ipynb` – affordability map and ranking  
-- `livability.ipynb` – liveability map and ranking
+- `forecasting_combined.ipynb` – Project property-level rents to 2030
+- `property_rent_model.ipynb` – Train property-level rent prediction models 
+- `sa2_growth_model.ipynb` – Forecast quarterly median rents at SA2-level  
 
 ## Answers to Key Research Questions
 
 ### 1\. **What are the Most Important Internal and External Factors?**
 The results for this question can be found in:  
-`Property_Rent_Model.ipynb`
+`property_rent_model.ipynb`
 
 ### 2\. **What are the Top 10 Suburbs with the Highest Predicted Growth Rate?**
 The results for this question can be found in:  
-`process_time_series.ipynb`
+`sa2_growth_model.ipynb`
 
 ### 3\. **Where are the Most Liveable and Affordable Suburbs?**
 The results for this question can be found in:  
-`afford.ipynb` and `livability.ipynb`
+`affordability.ipynb` and `livability.ipynb`
 
-To obtain a conclusive summary and analysis of our research methodology and findings, run the notebook `Summary_Notebook.ipynb`. 
+To obtain a conclusive summary and analysis of our research methodology and findings, run the notebook `summary.ipynb`. 
