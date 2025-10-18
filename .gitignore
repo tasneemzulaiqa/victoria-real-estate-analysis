@@ -1,5 +1,14 @@
 # Data
 
+datasets/
+*.csv
+*.shp
+*.geojson
+*.parquet
+*.html
+*.excel
+*.gpkg
+
 xtra/
 
 # Virtual environment
