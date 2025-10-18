@@ -39,9 +39,12 @@ pip install -r requirements.txt
 ## Datasets to Download:
 
 ### Population & Demographics
+
+**ABS Regional Population**  
+**Format:** `.gpkg`
+- [Download from ABS](https://www.abs.gov.au/statistics/people/population/regional-population/2023-24/32180_ERP_2024_SA2_GDA2020.zip)
 **VIC 2023 SA2 Population, Household, and Dwelling Projections (to 2036)**  
 **Format:** `.xlsx`  
-- [Download from ABS](https://www.abs.gov.au/statistics/people/population/regional-population/2023-24/32180_ERP_2024_SA2_GDA2020.zip)
 - [VIF2023_SA2_Pop_Hhold_Dwelling_Projections_to_2036_Release_2.xlsx
 xlsx
 1.7 MB](https://www.planning.vic.gov.au/__data/assets/excel_doc/0028/691660/VIF2023_SA2_Pop_Hhold_Dwelling_Projections_to_2036_Release_2.xlsx)
